@@ -32,14 +32,7 @@ document.getElementById('add').addEventListener('click', function() {
 console.log(data);
 function addTask(value) {
   data.task.push(value);
-  let list = document.getElementById('not-yet');
-  let task = document.createElement('li');
-  task.textContent = value;
   dataObjectUpdated();
-  console.log(data)
-  // 組み立てたdomをインサート
-  list.insertBefore(task, list.childNodes[0]);
-  // DOMの生成
   addTaskToDOM(value);
 }
 
